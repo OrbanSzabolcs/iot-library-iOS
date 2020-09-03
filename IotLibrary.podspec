@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "IotLibrary"
-  spec.version      = "1.0.0"
+  spec.version      = "0.0.1"
   spec.summary      = "IotLibrary is an iOS framework written in swift"
 
   # This description is used to generate tags and improve search results.
