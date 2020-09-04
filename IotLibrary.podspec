@@ -39,7 +39,7 @@ Uploads metrics and logs to the iot web platform
   #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
   #
 
-  spec.license      = "ZYNK Software"
+  spec.license      = "MIT"
   # spec.license      = { :type => "MIT", :file => "FILE_LICENSE" }
 
 
@@ -65,7 +65,7 @@ Uploads metrics and logs to the iot web platform
   #
 
   # spec.platform     = :ios
-  # spec.platform     = :ios, "5.0"
+  spec.platform     = :ios, "11.0"
 
   #  When using multiple platforms
   # spec.ios.deployment_target = "5.0"
