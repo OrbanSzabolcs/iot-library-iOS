@@ -7,13 +7,54 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D7591C0F25010B3C00AA60D4 /* iotLibrary.h in Headers */ = {isa = PBXBuildFile; fileRef = D7591C0D25010B3C00AA60D4 /* iotLibrary.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D7591C1C25010B7D00AA60D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7591C1B25010B7D00AA60D4 /* AppDelegate.swift */; };
 		D7591C2025010B7D00AA60D4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7591C1F25010B7D00AA60D4 /* ViewController.swift */; };
 		D7591C2325010B7D00AA60D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7591C2125010B7D00AA60D4 /* Main.storyboard */; };
 		D7591C2525010B8300AA60D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7591C2425010B8300AA60D4 /* Assets.xcassets */; };
 		D7591C2825010B8300AA60D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7591C2625010B8300AA60D4 /* LaunchScreen.storyboard */; };
+		D7591C442506179200AA60D4 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7591C332506179200AA60D4 /* Constants.swift */; };
+		D7591C452506179200AA60D4 /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7591C342506179200AA60D4 /* Storage.swift */; };
+		D7591C462506179200AA60D4 /* SyncManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7591C352506179200AA60D4 /* SyncManager.swift */; };
+		D7591C472506179200AA60D4 /* IotLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7591C362506179200AA60D4 /* IotLogger.swift */; };
+		D7591C482506179200AA60D4 /* EmptyResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7591C382506179200AA60D4 /* EmptyResponse.swift */; };
+		D7591C492506179200AA60D4 /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7591C392506179200AA60D4 /* Log.swift */; };
+		D7591C4A2506179200AA60D4 /* IotError.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7591C3A2506179200AA60D4 /* IotError.swift */; };
+		D7591C4B2506179200AA60D4 /* MetricWithValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7591C3B2506179200AA60D4 /* MetricWithValue.swift */; };
+		D7591C4C2506179200AA60D4 /* MetricValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7591C3C2506179200AA60D4 /* MetricValue.swift */; };
+		D7591C4D2506179200AA60D4 /* MetricShort.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7591C3D2506179200AA60D4 /* MetricShort.swift */; };
+		D7591C4E2506179200AA60D4 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7591C3E2506179200AA60D4 /* Configuration.swift */; };
+		D7591C4F2506179200AA60D4 /* UploadManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7591C3F2506179200AA60D4 /* UploadManager.swift */; };
+		D7591C502506179200AA60D4 /* IotTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7591C402506179200AA60D4 /* IotTracker.swift */; };
+		D7591C512506179200AA60D4 /* ApiConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7591C422506179200AA60D4 /* ApiConstants.swift */; };
+		D7591C522506179200AA60D4 /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7591C432506179200AA60D4 /* ApiManager.swift */; };
+		D7591C53250617AD00AA60D4 /* IotTracker.swift in Headers */ = {isa = PBXBuildFile; fileRef = D7591C402506179200AA60D4 /* IotTracker.swift */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7591C552506189700AA60D4 /* iotLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7591C0A25010B3C00AA60D4 /* iotLibrary.framework */; };
+		D7591C562506189700AA60D4 /* iotLibrary.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D7591C0A25010B3C00AA60D4 /* iotLibrary.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D7591C572506189700AA60D4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D7591C0125010B3C00AA60D4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D7591C0925010B3C00AA60D4;
+			remoteInfo = iotLibrary;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D7591C592506189700AA60D4 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				D7591C562506189700AA60D4 /* iotLibrary.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		D7591C0A25010B3C00AA60D4 /* iotLibrary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = iotLibrary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -26,6 +67,21 @@
 		D7591C2425010B8300AA60D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D7591C2725010B8300AA60D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D7591C2925010B8300AA60D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D7591C332506179200AA60D4 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		D7591C342506179200AA60D4 /* Storage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
+		D7591C352506179200AA60D4 /* SyncManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SyncManager.swift; sourceTree = "<group>"; };
+		D7591C362506179200AA60D4 /* IotLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IotLogger.swift; sourceTree = "<group>"; };
+		D7591C382506179200AA60D4 /* EmptyResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmptyResponse.swift; sourceTree = "<group>"; };
+		D7591C392506179200AA60D4 /* Log.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
+		D7591C3A2506179200AA60D4 /* IotError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IotError.swift; sourceTree = "<group>"; };
+		D7591C3B2506179200AA60D4 /* MetricWithValue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetricWithValue.swift; sourceTree = "<group>"; };
+		D7591C3C2506179200AA60D4 /* MetricValue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetricValue.swift; sourceTree = "<group>"; };
+		D7591C3D2506179200AA60D4 /* MetricShort.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetricShort.swift; sourceTree = "<group>"; };
+		D7591C3E2506179200AA60D4 /* Configuration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
+		D7591C3F2506179200AA60D4 /* UploadManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UploadManager.swift; sourceTree = "<group>"; };
+		D7591C402506179200AA60D4 /* IotTracker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IotTracker.swift; sourceTree = "<group>"; };
+		D7591C422506179200AA60D4 /* ApiConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiConstants.swift; sourceTree = "<group>"; };
+		D7591C432506179200AA60D4 /* ApiManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7591C552506189700AA60D4 /* iotLibrary.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,6 +109,7 @@
 				D7591C0C25010B3C00AA60D4 /* iotLibrary */,
 				D7591C1A25010B7D00AA60D4 /* iotLibrarySample */,
 				D7591C0B25010B3C00AA60D4 /* Products */,
+				D7591C542506189700AA60D4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,8 +125,13 @@
 		D7591C0C25010B3C00AA60D4 /* iotLibrary */ = {
 			isa = PBXGroup;
 			children = (
+				D7591C402506179200AA60D4 /* IotTracker.swift */,
+				D7591C3F2506179200AA60D4 /* UploadManager.swift */,
 				D7591C0D25010B3C00AA60D4 /* iotLibrary.h */,
 				D7591C0E25010B3C00AA60D4 /* Info.plist */,
+				D7591C322506179200AA60D4 /* Helpers */,
+				D7591C412506179200AA60D4 /* Api */,
+				D7591C372506179200AA60D4 /* Models */,
 			);
 			path = iotLibrary;
 			sourceTree = "<group>";
@@ -86,6 +149,47 @@
 			path = iotLibrarySample;
 			sourceTree = "<group>";
 		};
+		D7591C322506179200AA60D4 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				D7591C332506179200AA60D4 /* Constants.swift */,
+				D7591C342506179200AA60D4 /* Storage.swift */,
+				D7591C352506179200AA60D4 /* SyncManager.swift */,
+				D7591C362506179200AA60D4 /* IotLogger.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		D7591C372506179200AA60D4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D7591C382506179200AA60D4 /* EmptyResponse.swift */,
+				D7591C392506179200AA60D4 /* Log.swift */,
+				D7591C3A2506179200AA60D4 /* IotError.swift */,
+				D7591C3B2506179200AA60D4 /* MetricWithValue.swift */,
+				D7591C3C2506179200AA60D4 /* MetricValue.swift */,
+				D7591C3D2506179200AA60D4 /* MetricShort.swift */,
+				D7591C3E2506179200AA60D4 /* Configuration.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D7591C412506179200AA60D4 /* Api */ = {
+			isa = PBXGroup;
+			children = (
+				D7591C422506179200AA60D4 /* ApiConstants.swift */,
+				D7591C432506179200AA60D4 /* ApiManager.swift */,
+			);
+			path = Api;
+			sourceTree = "<group>";
+		};
+		D7591C542506189700AA60D4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -93,7 +197,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D7591C0F25010B3C00AA60D4 /* iotLibrary.h in Headers */,
+				D7591C53250617AD00AA60D4 /* IotTracker.swift in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -125,10 +229,12 @@
 				D7591C1525010B7D00AA60D4 /* Sources */,
 				D7591C1625010B7D00AA60D4 /* Frameworks */,
 				D7591C1725010B7D00AA60D4 /* Resources */,
+				D7591C592506189700AA60D4 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				D7591C582506189700AA60D4 /* PBXTargetDependency */,
 			);
 			name = iotLibrarySample;
 			productName = iotLibrarySample;
@@ -147,6 +253,7 @@
 				TargetAttributes = {
 					D7591C0925010B3C00AA60D4 = {
 						CreatedOnToolsVersion = 11.6;
+						LastSwiftMigration = 1160;
 					};
 					D7591C1825010B7D00AA60D4 = {
 						CreatedOnToolsVersion = 11.6;
@@ -197,6 +304,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7591C512506179200AA60D4 /* ApiConstants.swift in Sources */,
+				D7591C462506179200AA60D4 /* SyncManager.swift in Sources */,
+				D7591C502506179200AA60D4 /* IotTracker.swift in Sources */,
+				D7591C4C2506179200AA60D4 /* MetricValue.swift in Sources */,
+				D7591C4F2506179200AA60D4 /* UploadManager.swift in Sources */,
+				D7591C442506179200AA60D4 /* Constants.swift in Sources */,
+				D7591C492506179200AA60D4 /* Log.swift in Sources */,
+				D7591C522506179200AA60D4 /* ApiManager.swift in Sources */,
+				D7591C4D2506179200AA60D4 /* MetricShort.swift in Sources */,
+				D7591C472506179200AA60D4 /* IotLogger.swift in Sources */,
+				D7591C482506179200AA60D4 /* EmptyResponse.swift in Sources */,
+				D7591C4B2506179200AA60D4 /* MetricWithValue.swift in Sources */,
+				D7591C4A2506179200AA60D4 /* IotError.swift in Sources */,
+				D7591C452506179200AA60D4 /* Storage.swift in Sources */,
+				D7591C4E2506179200AA60D4 /* Configuration.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -210,6 +332,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D7591C582506189700AA60D4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D7591C0925010B3C00AA60D4 /* iotLibrary */;
+			targetProxy = D7591C572506189700AA60D4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		D7591C2125010B7D00AA60D4 /* Main.storyboard */ = {
@@ -354,6 +484,7 @@
 		D7591C1325010B3C00AA60D4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 8B7CSDWGNH;
@@ -371,6 +502,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.zynksoftware.iotLibrary;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -379,6 +511,7 @@
 		D7591C1425010B3C00AA60D4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 8B7CSDWGNH;
