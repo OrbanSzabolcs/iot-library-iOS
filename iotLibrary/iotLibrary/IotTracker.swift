@@ -34,4 +34,8 @@ public class IotTracker {
                             value: String) {
         uploadManager?.trackLog(logStream: logStream, message: message, value: value)
     }
+    
+    public func sendMqttMessage(message: String) {
+        uploadManager?.sendMqttMessage(message: message)
+    }
 }

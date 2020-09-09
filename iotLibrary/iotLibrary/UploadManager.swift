@@ -32,9 +32,11 @@ class UploadManager {
         if let timer = timer {
             backgroundRunLoop.add(timer, forMode: .common)
         }
+        
+        MqttManager.shared.setup()
     }
     
-    public func trackMetric(name: String,
+    func trackMetric(name: String,
                             tag: String,
                             value: String) {
         backgroundDataQueue.async {
@@ -50,7 +52,7 @@ class UploadManager {
         }
     }
     
-    public func trackLog(logStream: String,
+    func trackLog(logStream: String,
                             message: String,
                             value: String) {
         backgroundDataQueue.async {
@@ -64,6 +66,10 @@ class UploadManager {
                 self.uploadLogs()
             }
         }
+    }
+    
+    func sendMqttMessage(message: String) {
+        MqttManager.shared.sendMessage(message: message)
     }
     
     @objc private func upload() {

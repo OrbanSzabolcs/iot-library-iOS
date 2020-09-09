@@ -13,6 +13,7 @@ class ViewController: UIViewController {
 
     @IBOutlet var addMetricButton: UIButton!
     @IBOutlet var addLogButton: UIButton!
+    @IBOutlet var sendMqttMessageButton: UIButton!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,6 +21,7 @@ class ViewController: UIViewController {
         
         addMetricButton.addTarget(self, action: #selector(addMetric), for: .touchUpInside)
         addLogButton.addTarget(self, action: #selector(addLog), for: .touchUpInside)
+        sendMqttMessageButton.addTarget(self, action: #selector(sendMqttMessage), for: .touchUpInside)
     }
 
     @objc func addMetric() {
@@ -68,6 +70,10 @@ class ViewController: UIViewController {
                 }
             }
         }
+    }
+    
+    @objc func sendMqttMessage() {
+        IotTracker.shared.sendMqttMessage(message: "Button pressed")
     }
 }
 

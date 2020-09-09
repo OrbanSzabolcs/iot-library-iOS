@@ -3,10 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		02ABA47482883AA7DD648D44 /* Pods_iotLibrarySample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1606E9E7BF18D33C520C388 /* Pods_iotLibrarySample.framework */; };
+		4D83ECA62338ABCECCFDF5B0 /* Pods_iotLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10DD04ABD86E6A4B07EACFA8 /* Pods_iotLibrary.framework */; };
+		D70117F92506BF8000768E90 /* MqttManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D70117F82506BF8000768E90 /* MqttManager.swift */; };
 		D7591C1C25010B7D00AA60D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7591C1B25010B7D00AA60D4 /* AppDelegate.swift */; };
 		D7591C2025010B7D00AA60D4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7591C1F25010B7D00AA60D4 /* ViewController.swift */; };
 		D7591C2325010B7D00AA60D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7591C2125010B7D00AA60D4 /* Main.storyboard */; };
@@ -57,6 +60,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		10DD04ABD86E6A4B07EACFA8 /* Pods_iotLibrary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iotLibrary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		704E47B0C964708AD391D993 /* Pods-iotLibrarySample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iotLibrarySample.release.xcconfig"; path = "Target Support Files/Pods-iotLibrarySample/Pods-iotLibrarySample.release.xcconfig"; sourceTree = "<group>"; };
+		8005012C74524130D2E77A56 /* Pods-iotLibrarySample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iotLibrarySample.debug.xcconfig"; path = "Target Support Files/Pods-iotLibrarySample/Pods-iotLibrarySample.debug.xcconfig"; sourceTree = "<group>"; };
+		8E07F0B46375085678495CC9 /* Pods-iotLibrary.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iotLibrary.release.xcconfig"; path = "Target Support Files/Pods-iotLibrary/Pods-iotLibrary.release.xcconfig"; sourceTree = "<group>"; };
+		A1606E9E7BF18D33C520C388 /* Pods_iotLibrarySample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iotLibrarySample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D70117F82506BF8000768E90 /* MqttManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MqttManager.swift; sourceTree = "<group>"; };
 		D7591C0A25010B3C00AA60D4 /* iotLibrary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = iotLibrary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7591C0D25010B3C00AA60D4 /* iotLibrary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iotLibrary.h; sourceTree = "<group>"; };
 		D7591C0E25010B3C00AA60D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -82,6 +91,7 @@
 		D7591C402506179200AA60D4 /* IotTracker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IotTracker.swift; sourceTree = "<group>"; };
 		D7591C422506179200AA60D4 /* ApiConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiConstants.swift; sourceTree = "<group>"; };
 		D7591C432506179200AA60D4 /* ApiManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
+		D9F78065E15DE8F99031853D /* Pods-iotLibrary.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iotLibrary.debug.xcconfig"; path = "Target Support Files/Pods-iotLibrary/Pods-iotLibrary.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +99,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D83ECA62338ABCECCFDF5B0 /* Pods_iotLibrary.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,12 +108,31 @@
 			buildActionMask = 2147483647;
 			files = (
 				D7591C552506189700AA60D4 /* iotLibrary.framework in Frameworks */,
+				02ABA47482883AA7DD648D44 /* Pods_iotLibrarySample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A6874CCBDB55F7D1D469D39B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D9F78065E15DE8F99031853D /* Pods-iotLibrary.debug.xcconfig */,
+				8E07F0B46375085678495CC9 /* Pods-iotLibrary.release.xcconfig */,
+				8005012C74524130D2E77A56 /* Pods-iotLibrarySample.debug.xcconfig */,
+				704E47B0C964708AD391D993 /* Pods-iotLibrarySample.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D70117FC2508C7FC00768E90 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		D7591C0025010B3C00AA60D4 = {
 			isa = PBXGroup;
 			children = (
@@ -110,6 +140,7 @@
 				D7591C1A25010B7D00AA60D4 /* iotLibrarySample */,
 				D7591C0B25010B3C00AA60D4 /* Products */,
 				D7591C542506189700AA60D4 /* Frameworks */,
+				A6874CCBDB55F7D1D469D39B /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -129,6 +160,7 @@
 				D7591C3F2506179200AA60D4 /* UploadManager.swift */,
 				D7591C0D25010B3C00AA60D4 /* iotLibrary.h */,
 				D7591C0E25010B3C00AA60D4 /* Info.plist */,
+				D70117FC2508C7FC00768E90 /* Extensions */,
 				D7591C322506179200AA60D4 /* Helpers */,
 				D7591C412506179200AA60D4 /* Api */,
 				D7591C372506179200AA60D4 /* Models */,
@@ -179,6 +211,7 @@
 			children = (
 				D7591C422506179200AA60D4 /* ApiConstants.swift */,
 				D7591C432506179200AA60D4 /* ApiManager.swift */,
+				D70117F82506BF8000768E90 /* MqttManager.swift */,
 			);
 			path = Api;
 			sourceTree = "<group>";
@@ -186,6 +219,8 @@
 		D7591C542506189700AA60D4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				10DD04ABD86E6A4B07EACFA8 /* Pods_iotLibrary.framework */,
+				A1606E9E7BF18D33C520C388 /* Pods_iotLibrarySample.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -208,6 +243,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D7591C1225010B3C00AA60D4 /* Build configuration list for PBXNativeTarget "iotLibrary" */;
 			buildPhases = (
+				827A2CC08359E7585BC47976 /* [CP] Check Pods Manifest.lock */,
 				D7591C0525010B3C00AA60D4 /* Headers */,
 				D7591C0625010B3C00AA60D4 /* Sources */,
 				D7591C0725010B3C00AA60D4 /* Frameworks */,
@@ -226,10 +262,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D7591C2A25010B8300AA60D4 /* Build configuration list for PBXNativeTarget "iotLibrarySample" */;
 			buildPhases = (
+				4B08922E83DFB24E2064475C /* [CP] Check Pods Manifest.lock */,
 				D7591C1525010B7D00AA60D4 /* Sources */,
 				D7591C1625010B7D00AA60D4 /* Frameworks */,
 				D7591C1725010B7D00AA60D4 /* Resources */,
 				D7591C592506189700AA60D4 /* Embed Frameworks */,
+				A5AEA2B9C6E8376AAE1F9D1C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -299,6 +337,70 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4B08922E83DFB24E2064475C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iotLibrarySample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		827A2CC08359E7585BC47976 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iotLibrary-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A5AEA2B9C6E8376AAE1F9D1C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iotLibrarySample/Pods-iotLibrarySample-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iotLibrarySample/Pods-iotLibrarySample-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iotLibrarySample/Pods-iotLibrarySample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D7591C0625010B3C00AA60D4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -317,6 +419,7 @@
 				D7591C482506179200AA60D4 /* EmptyResponse.swift in Sources */,
 				D7591C4B2506179200AA60D4 /* MetricWithValue.swift in Sources */,
 				D7591C4A2506179200AA60D4 /* IotError.swift in Sources */,
+				D70117F92506BF8000768E90 /* MqttManager.swift in Sources */,
 				D7591C452506179200AA60D4 /* Storage.swift in Sources */,
 				D7591C4E2506179200AA60D4 /* Configuration.swift in Sources */,
 			);
@@ -483,9 +586,11 @@
 		};
 		D7591C1325010B3C00AA60D4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D9F78065E15DE8F99031853D /* Pods-iotLibrary.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 8B7CSDWGNH;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -510,9 +615,11 @@
 		};
 		D7591C1425010B3C00AA60D4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8E07F0B46375085678495CC9 /* Pods-iotLibrary.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 8B7CSDWGNH;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -536,6 +643,7 @@
 		};
 		D7591C2B25010B8300AA60D4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8005012C74524130D2E77A56 /* Pods-iotLibrarySample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -555,6 +663,7 @@
 		};
 		D7591C2C25010B8300AA60D4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 704E47B0C964708AD391D993 /* Pods-iotLibrarySample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
